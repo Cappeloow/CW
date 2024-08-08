@@ -3,9 +3,17 @@ const HomePage = () => {
   return (
     <main>
         <section className='main-section'>
-          <h1>Casper Wernersson</h1>
-          <span>Web Developer / Visual Designer</span>
-          <p>This is the way</p>
+          <div className='left-border-container'>
+            <div className='title-section'>
+              <h1>Casper Wernersson</h1>
+              <p>Web Developer / Visual Designer</p>
+            </div>
+          </div>
+            <div className='slogan-section'>
+              <span>
+                “Let me tell you about myself.”
+              </span>
+            </div>
         </section>
        
         <section className='introduction-section'>
