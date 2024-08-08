@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { IoMusicalNotes, IoCodeSlash } from "react-icons/io5";
 import { MdAddAPhoto, MdDesignServices } from "react-icons/md";
 import { FaQrcode } from "react-icons/fa";
 import casperbild from '../../../assets/profilbild-casper-svartvit.jpg';
+import { animate, motion, useMotionValue, useTransform } from 'framer-motion';
+import { cursorVariants } from '../../../animations/text';
+import TextWriter from '../../../animations/components/TextWriter';
 
 interface IExpertise  {
   title: string;
@@ -36,7 +39,9 @@ const expertiseList:IExpertise[] = [
 const IntroductionSection = () => {
   const [selectedExpertise, setSelectedExpertise] = useState<IExpertise>(expertiseList[0]);
 
+  
   const handleExpertiseClick = (expertise:string) => {
+    
     switch (expertise) {
       case "web":
         setSelectedExpertise(expertiseList[0])
@@ -85,7 +90,7 @@ const IntroductionSection = () => {
                 <div className='text-container'>
                   <h2>{selectedExpertise.title}</h2>
                   <br />
-                  <p>{selectedExpertise.description}</p>
+                  <TextWriter content={selectedExpertise.description} />
                 </div>
               </div>
             </article>
