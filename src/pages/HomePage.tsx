@@ -2,6 +2,7 @@ import React from 'react'
 import { IoMusicalNotes, IoCodeSlash } from "react-icons/io5";
 import { MdAddAPhoto, MdDesignServices } from "react-icons/md";
 import { FaQrcode } from "react-icons/fa";
+import casperbild from '../assets/profilbild-casper-svartvit.jpg' 
 const HomePage = () => {
   return (
     <main>
@@ -37,7 +38,7 @@ const HomePage = () => {
             <article>
               <div className='img-section'>
                 <div className='img-container'>
-                  <img src="" alt="" />
+                  <img src={casperbild} alt=""/>
                 </div>
               </div>
               <div className='text-section'>

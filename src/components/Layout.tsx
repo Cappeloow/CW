@@ -10,9 +10,9 @@ const Layout = ({ children }:LayoutRouteProps) => {
    </section>
    <nav>
     <ul>
-      <li>one</li>
-      <li>two</li>
-      <li>three</li>
+      <li><a href="">About</a></li>
+      <li><a href="">Projects</a></li>
+      <li><a href="">Contact</a></li>
     </ul>
    </nav>
  </header>
