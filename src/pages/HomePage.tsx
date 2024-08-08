@@ -1,4 +1,7 @@
 import React from 'react'
+import { IoMusicalNotes, IoCodeSlash } from "react-icons/io5";
+import { MdAddAPhoto, MdDesignServices } from "react-icons/md";
+import { FaQrcode } from "react-icons/fa";
 const HomePage = () => {
   return (
     <main>
@@ -17,19 +20,45 @@ const HomePage = () => {
         </section>
        
         <section className='introduction-section'>
-          <aside className='left-icon-container'>
-            <div>ICON</div>
-            <div>ICON</div>
-            <div>ICON</div>
+          <aside className='left-icon-aside'>
+            <div className='left-icon-container'>
+              <button>
+                <IoCodeSlash />
+              </button>
+              <button>
+                <IoMusicalNotes/>
+              </button>
+              <button>
+                <MdAddAPhoto />
+              </button>
+            </div>
           </aside>
-          <article>
-            <img src="" alt="" />
-            <h2>title</h2>
-            <p>text</p>
-          </article>
-          <aside className='right-icon-container'>
-            <div>icon</div>
-            <div>icon</div>
+          <section className='article-container'>
+            <article>
+              <div className='img-section'>
+                <div className='img-container'>
+                  <img src="" alt="" />
+                </div>
+              </div>
+              <div className='text-section'>
+                <div className='text-container'>
+                  <h2>Web Development</h2>
+                  <br />
+                  <p>I offer affordable web development services.</p>
+                </div>
+              </div>
+            </article>
+            <div className='shadow-pool'></div>
+          </section>
+          <aside className='right-icon-aside'>
+            <div className='right-icon-container'>
+              <button>
+                <MdDesignServices />
+              </button>
+              <button>
+                <FaQrcode/>
+              </button>
+            </div>
           </aside>
         </section>
     </main>
