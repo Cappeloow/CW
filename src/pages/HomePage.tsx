@@ -2,14 +2,14 @@ import React from 'react'
 const HomePage = () => {
   return (
     <main>
-        <section className='header'>
+        <section className='main-section'>
           <h1>Casper Wernersson</h1>
           <span>Web Developer / Visual Designer</span>
           <p>This is the way</p>
         </section>
        
-        <section>
-          <aside>
+        <section className='introduction-section'>
+          <aside className='left-icon-container'>
             <div>ICON</div>
             <div>ICON</div>
             <div>ICON</div>
@@ -19,7 +19,7 @@ const HomePage = () => {
             <h2>title</h2>
             <p>text</p>
           </article>
-          <aside>
+          <aside className='right-icon-container'>
             <div>icon</div>
             <div>icon</div>
           </aside>
