@@ -1,0 +1,36 @@
+$background-color-dark: #1C2420;
+// Primary Colors
+$primary-color: #3498db;
+$primary-color-dark: #2980b9;
+$primary-color-light: #5dade2;
+
+// Secondary Colors
+$secondary-color: #2ecc71;
+$secondary-color-dark: #27ae60;
+$secondary-color-light: #58d68d;
+
+// Neutral Colors
+$white: #ffffff;
+$black: #000000;
+$gray-light: #bdc3c7;
+$gray-dark: #7f8c8d;
+
+// Text Colors
+$text-color: $black;
+$text-color-light: $gray-dark;
+$text-color-inverse: $white;
+
+// Background Colors
+$background-color: $white;
+$background-color-alt: $gray-light;
+
+// Accent Colors
+$accent-color: #e74c3c;
+$accent-color-light: #ec7063;
+$accent-color-dark: #c0392b;
+
+// Utility Colors
+$success-color: $secondary-color;
+$error-color: $accent-color;
+$warning-color: #f39c12;
+$info-color: $primary-color;
