@@ -1,0 +1,33 @@
+@use "../abstracts" as *;
+
+main {
+  padding-left:40px;
+  padding-right:40px;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+
+  .about-image-section {
+    width:700px;
+    display:flex;
+    flex-direction: column;
+    .about-image-container {
+      padding-top:20px;
+      width:600px;
+      height:550px;
+      img {
+        border-radius: 12px;
+        width:100%;
+        height:100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .about-text-section{
+    flex:1;
+    margin-top:100px;
+    padding:20px;
+    height:550px;
+  }
+
+}

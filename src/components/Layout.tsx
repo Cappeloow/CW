@@ -18,9 +18,9 @@ const Layout = ({ children }:LayoutRouteProps) => {
     </ul>
    </nav>
  </header>
- <main>
+ <>
  {children}
- </main>
+ </>
  <footer>
    <p>Footer</p>
  </footer>
