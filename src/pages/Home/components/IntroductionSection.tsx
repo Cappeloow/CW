@@ -5,7 +5,7 @@ import { MdAddAPhoto, MdDesignServices } from "react-icons/md";
 import { FaQrcode } from "react-icons/fa";
 import casperbild from '../../../assets/profilbild-casper-svartvit.jpg';
 import { animate, motion, useMotionValue, useTransform } from 'framer-motion';
-import { cursorVariants } from '../../../animations/text';
+import { cursorVariants, leftIconContainerMovement, rightIconContainerMovement } from '../../../animations/element';
 import TextWriter from '../../../animations/components/TextWriter';
 
 interface IExpertise  {
@@ -67,6 +67,11 @@ const IntroductionSection = () => {
   return (
     <section className='introduction-section'>
           <aside className='left-icon-aside'>
+          <motion.div 
+                variants={leftIconContainerMovement} 
+                initial="init" 
+                animate="anim"  
+              >
             <div className='left-icon-container'>
               <button onClick={() => handleExpertiseClick("web")}>
                 <IoCodeSlash />
@@ -78,6 +83,7 @@ const IntroductionSection = () => {
                 <MdAddAPhoto />
               </button>
             </div>
+            </motion.div>
           </aside>
           <section className='article-container'>
             <article>
@@ -97,14 +103,20 @@ const IntroductionSection = () => {
             <div className='shadow-pool'></div>
           </section>
           <aside className='right-icon-aside'>
-            <div className='right-icon-container'>
-              <button onClick={() => handleExpertiseClick("design")}>
-                <MdDesignServices />
-              </button>
-              <button onClick={() => handleExpertiseClick("system")}>
-                <FaQrcode/>
-              </button>
-            </div>
+            <motion.div 
+                  variants={rightIconContainerMovement} 
+                  initial="init" 
+                  animate="anim"  
+                >
+              <div className='right-icon-container'>
+                <button onClick={() => handleExpertiseClick("design")}>
+                  <MdDesignServices />
+                </button>
+                <button onClick={() => handleExpertiseClick("system")}>
+                  <FaQrcode/>
+                </button>
+              </div>
+            </motion.div>
           </aside>
         </section>
   )

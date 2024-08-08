@@ -1,7 +1,7 @@
 import React from 'react'
 import IntroductionSection from './components/IntroductionSection'
 import { motion } from 'framer-motion';
-import { textFromRightToLeft, textUp } from '../../animations/text';
+import { elementFromRightToLeft, elementUp } from '../../animations/element';
 const HomePage = () => {
 
   return (
@@ -10,14 +10,14 @@ const HomePage = () => {
           <div className='left-border-container'>
             <div className='title-section'>
               <motion.div 
-                variants={textUp} 
+                variants={elementUp} 
                 initial="init" 
                 animate="anim"  
               >
                 <h1>Casper Wernersson</h1>
               </motion.div>
               <motion.div 
-                variants={textFromRightToLeft} 
+                variants={elementFromRightToLeft} 
                 initial="init" 
                 animate="anim"
               >
