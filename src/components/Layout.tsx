@@ -6,13 +6,15 @@ const Layout = ({ children }:LayoutRouteProps) => {
  <>
  <header>
    <section>
+    <a href="/">
      <img src={cwIcon} alt="CW logo" height={70} width={70}/>
+    </a>
    </section>
    <nav>
     <ul>
-      <li><a href="">About</a></li>
-      <li><a href="">Projects</a></li>
-      <li><a href="">Contact</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/contact">Contact</a></li>
     </ul>
    </nav>
  </header>
