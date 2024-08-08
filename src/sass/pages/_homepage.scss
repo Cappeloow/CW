@@ -62,7 +62,13 @@ main {
           align-items: center;
           justify-content: center; 
           border: none;
+          transition:0.5s;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.5);
+        }
+        button:hover {
+          transition:1s;
+          box-shadow: 2px 2px 2px $primary-color, 0 2px 2px $primary-color;
+          background-color: white;
         }
       }
     }
@@ -158,6 +164,12 @@ main {
           justify-content: center;  
           border: none;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.5);
+          transition:0.5s;
+        }
+        button:hover {
+          transition:1s;
+          box-shadow: 2px 2px 2px $primary-color, 0 2px 2px $primary-color;
+          background-color: white;
         }
       }
     }
