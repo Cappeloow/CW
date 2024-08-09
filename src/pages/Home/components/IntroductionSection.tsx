@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { IoMusicalNotes, IoCodeSlash } from "react-icons/io5";
 import { MdAddAPhoto, MdDesignServices } from "react-icons/md";
 import { FaQrcode } from "react-icons/fa";
+import { FaCirclePlay } from "react-icons/fa6";
 import casperbild from '../../../assets/profilbild-casper-svartvit.jpg';
 import { animate, motion, useMotionValue, useTransform } from 'framer-motion';
 import { cursorVariants, leftIconContainerMovement, rightIconContainerMovement } from '../../../animations/element';
@@ -38,8 +39,10 @@ const expertiseList:IExpertise[] = [
 
 const IntroductionSection = () => {
   const [selectedExpertise, setSelectedExpertise] = useState<IExpertise>(expertiseList[0]);
-
   const [isProjectActivated, setIsProjectActivated] = useState(false);
+
+  const [showProjectBtn, setShowProjectBtn] = useState(false);;
+
   const handleExpertiseClick = (expertise:string) => {
     
     switch (expertise) {
@@ -74,7 +77,10 @@ const IntroductionSection = () => {
   }
 
   return (
-    <section className='introduction-section'>
+    <section className='introduction-section' 
+    onMouseEnter={() => setShowProjectBtn(true)} 
+    onMouseLeave={() => setShowProjectBtn(false)}
+    >
           <aside className='left-icon-aside'>
           <motion.div 
                 variants={leftIconContainerMovement} 
@@ -107,7 +113,7 @@ const IntroductionSection = () => {
                   <br />
                   <TextWriter content={selectedExpertise.description} />
                   <br />
-                  <button onClick={() => goToProjects()}>Projects</button>
+                  {showProjectBtn && <button onClick={() => goToProjects()}><FaCirclePlay/></button>}
                 </div>
               </div>
             </article>
