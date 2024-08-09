@@ -73,6 +73,9 @@ main.about {
     margin-top:100px;
     padding:20px;
     height:550px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
 }
