@@ -1,6 +1,10 @@
 import React from 'react'
 import ProfileHeader from '../../components/ProfileHeader'
 import profilcasper from '../../assets/profilbild-casper-svartvit.jpg'
+
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
 const AboutPage = () => {
   return (
     <main className='about'>
@@ -8,6 +12,14 @@ const AboutPage = () => {
         <ProfileHeader/>
         <div className='about-image-container'>
           <img src={profilcasper} alt="" />
+          <div>
+            <a href="https://www.linkedin.com/in/cw1996/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin/>
+            </a>
+            <a href="https://github.com/Cappeloow" target="_blank" rel="noopener noreferrer">
+              <FaGithub/>
+            </a>
+          </div>
         </div>
       </section>
     
