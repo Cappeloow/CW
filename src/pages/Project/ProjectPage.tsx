@@ -1,31 +1,33 @@
 import React from 'react'
-
+import { IoMusicalNotes, IoCodeSlash } from "react-icons/io5";
+import { MdAddAPhoto, MdDesignServices } from "react-icons/md";
+import { FaQrcode } from "react-icons/fa";
 const ProjectPage = () => {
   return (
-    <main>
-      <section>
+    <main className='projects'>
+      <section className='left-project-container'>
         <aside>
           <ul>
             <li>
-              <a href='#'>Project 1</a>
+              <IoCodeSlash/>
             </li>
             <li>
-              <a href='#'>Project 2</a>
+              <IoMusicalNotes/>
             </li>
             <li>
-              <a href='#'>Project 3</a>
+              <MdAddAPhoto/>
             </li>
             <li>
-              <a href='#'>Project 4</a>
+              <MdDesignServices/>
             </li>
             <li>
-              <a href='#'>Project 5</a>
+              <FaQrcode/>
             </li>
           </ul>
         </aside>
       </section>
       
-      <section>
+      <section className='right-project-container'>
         <div>
           <h1>My Title</h1>
         </div>
