@@ -3,7 +3,7 @@ import ProfileHeader from '../../components/ProfileHeader'
 import profilcasper from '../../assets/profilbild-casper-svartvit.jpg'
 const AboutPage = () => {
   return (
-    <main>
+    <main className='about'>
       <section className='about-image-section'>
         <ProfileHeader/>
         <div className='about-image-container'>

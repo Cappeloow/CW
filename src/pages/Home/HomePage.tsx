@@ -6,7 +6,7 @@ import ProfileHeader from '../../components/ProfileHeader';
 const HomePage = () => {
 
   return (
-    <main>
+    <main className='home'>
         <section className='main-section'>
           <div className='left-main-container'>
             <ProfileHeader/>
@@ -18,7 +18,6 @@ const HomePage = () => {
             </div>
         </section>
         <IntroductionSection />
-        
     </main>
   )
 }
