@@ -5,37 +5,44 @@ import { FaQrcode } from "react-icons/fa";
 const ProjectPage = () => {
   return (
     <main className='projects'>
-      <section className='left-project-container'>
+      <section className='left-project-section'>
         <aside>
           <ul>
-            <li>
+            <li className='icon-btn'>
               <IoCodeSlash/>
             </li>
-            <li>
+            <li className='icon-btn'>
               <IoMusicalNotes/>
             </li>
-            <li>
+            <li className='icon-btn'>
               <MdAddAPhoto/>
             </li>
-            <li>
+            <li className='icon-btn'>
               <MdDesignServices/>
             </li>
-            <li>
+            <li className='icon-btn'>
               <FaQrcode/>
             </li>
           </ul>
         </aside>
       </section>
       
-      <section className='right-project-container'>
-        <div>
+      <section className='right-project-section'>
+        <div className='project-title-container'>
           <h1>My Title</h1>
         </div>
-        <div>
-          <div>
+        <div className='project-main-container'>
+          <div className='project-img-container'>
             <img src="" alt="placeholder text" />
           </div>
-          <article>Text of the project</article>
+          <div className='project-content-container'>
+            <div>
+        
+            </div>
+            <article>
+
+            </article>
+          </div>
         </div>
         <div>Pagination
           <button>1</button>

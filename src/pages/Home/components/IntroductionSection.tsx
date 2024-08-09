@@ -73,13 +73,13 @@ const IntroductionSection = () => {
                 animate="anim"  
               >
             <div className='left-icon-container'>
-              <button onClick={() => handleExpertiseClick("web")}>
+              <button className='icon-btn' onClick={() => handleExpertiseClick("web")}>
                 <IoCodeSlash />
               </button>
-              <button onClick={() => handleExpertiseClick("song")}>
+              <button className='icon-btn' onClick={() => handleExpertiseClick("song")}>
                 <IoMusicalNotes/>
               </button>
-              <button onClick={() => handleExpertiseClick("photo")}>
+              <button className='icon-btn' onClick={() => handleExpertiseClick("photo")}>
                 <MdAddAPhoto />
               </button>
             </div>
@@ -109,10 +109,10 @@ const IntroductionSection = () => {
                   animate="anim"  
                 >
               <div className='right-icon-container'>
-                <button onClick={() => handleExpertiseClick("design")}>
+                <button className='icon-btn' onClick={() => handleExpertiseClick("design")}>
                   <MdDesignServices />
                 </button>
-                <button onClick={() => handleExpertiseClick("system")}>
+                <button className='icon-btn' onClick={() => handleExpertiseClick("system")}>
                   <FaQrcode/>
                 </button>
               </div>

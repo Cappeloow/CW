@@ -50,20 +50,7 @@ main.home {
         flex-direction: column;
         justify-content: space-around;
         margin-bottom:100px;
-        button {
-          background-color: #D9D9D9;
-          cursor:pointer;
-          height:50px;
-          border-radius:12px;
-          font-size:35px;
-          color:black;
-          display: flex;
-          align-items: center;
-          justify-content: center; 
-          border: none;
-          transition:0.5s;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.5);
-        }
+        
         button:hover {
           transition:1s;
           box-shadow: 2px 2px 2px $primary-color, 0 2px 2px $primary-color;
@@ -159,20 +146,7 @@ main.home {
         justify-content: space-around;
         margin-bottom:150px;
 
-        button {
-          background-color: #D9D9D9;
-          height:50px;
-          border-radius:12px;
-          font-size:35px;
-          cursor:pointer;
-          color:black;
-          display: flex;
-          align-items: center;
-          justify-content: center;  
-          border: none;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.5);
-          transition:0.5s;
-        }
+   
         button:hover {
           transition:1s;
           box-shadow: 2px 2px 2px $primary-color, 0 2px 2px $primary-color;
