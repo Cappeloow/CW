@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 
-.icon-btn {
+.icon-btn, .icon-btn-move {
    background-color: #D9D9D9;
    height: 50px;
    border-radius: 12px;
@@ -15,3 +15,4 @@
    transition: 0.5s;
    position: relative; /* For the ::after pseudo-element */
 }
+

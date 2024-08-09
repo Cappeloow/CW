@@ -20,18 +20,23 @@ main.projects {
     aside {
       width: 120px;
       height: 500px;
-      border-right: 1px solid white;
       position: relative;
-  
+      animation: electricChock 2s ease-in;
+      animation-delay: 2s;
+      border-right: 1px solid white;
       ul {
         height: 100%;
-        width:100px;
+        width: 100px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         position: relative; 
-  
+        animation: moveElementFromRightToZero 2s ease-in;
+      
         li {
+          position: relative;
+          animation:electricChockElement 2s ease-in;
+          animation-delay:2.1s;
           &::after {
             content: "";
             position: absolute;
@@ -41,6 +46,9 @@ main.projects {
             height: 1px;
             background-color: white;
             transform: translateY(-50%);
+            opacity: 0; 
+            animation: showAfter 0.1s ease-in forwards; 
+            animation-delay: 2s; 
           }
         }
       }
@@ -68,7 +76,7 @@ main.projects {
         border: 1px solid white;
         border-bottom-left-radius: 12px;
         border-top-left-radius: 12px;
-        overflow: hidden; /* Ensure image does not overflow container */
+        overflow: hidden; 
       
         img {
           object-fit:cover;
@@ -102,5 +110,55 @@ main.projects {
       }
     }
 
+  }
+}
+
+
+@keyframes moveElementFromRightToZero {
+  0%{
+    transform: translateX(-300px);
+  }
+  80% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes showAfter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes electricChock {
+  0% {
+    border-right: 1px solid #0097b2;
+  }
+  100% {
+    border-right: 1px solid #ffffff;
+  }
+}
+
+@keyframes electricChockElement {
+  0% {
+    box-shadow: 0 0 5px 0 rgba(0, 151, 178, 0.8); /* Start with a subtle shadow */
+  }
+  25% {
+    box-shadow: 0 0 10px 5px rgba(0, 151, 178, 1); /* Increase intensity */
+  }
+  50% {
+    box-shadow: 0 0 15px 10px rgba(0, 151, 178, 1); /* Max intensity */
+  }
+  75% {
+    box-shadow: 0 0 10px 5px rgba(0, 151, 178, 1); /* Decrease intensity */
+  }
+  100% {
+    box-shadow: 0 0 5px 0 rgba(0, 151, 178, 0.8); /* Return to initial state */
   }
 }

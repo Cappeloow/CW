@@ -39,7 +39,7 @@ const expertiseList:IExpertise[] = [
 const IntroductionSection = () => {
   const [selectedExpertise, setSelectedExpertise] = useState<IExpertise>(expertiseList[0]);
 
-  
+  const [isProjectActivated, setIsProjectActivated] = useState(false);
   const handleExpertiseClick = (expertise:string) => {
     
     switch (expertise) {
@@ -64,6 +64,15 @@ const IntroductionSection = () => {
     }
   };
 
+  function goToProjects() {
+    setIsProjectActivated(true);
+
+    // wait 2 seconds;
+    setTimeout(() => {
+      window.location.href = "/projects";
+    }, 1500);
+  }
+
   return (
     <section className='introduction-section'>
           <aside className='left-icon-aside'>
@@ -73,13 +82,13 @@ const IntroductionSection = () => {
                 animate="anim"  
               >
             <div className='left-icon-container'>
-              <button className='icon-btn' onClick={() => handleExpertiseClick("web")}>
+              <button className={!isProjectActivated ? 'icon-btn' : 'icon-btn-move'} onClick={() => handleExpertiseClick("web")}>
                 <IoCodeSlash />
               </button>
-              <button className='icon-btn' onClick={() => handleExpertiseClick("song")}>
+              <button className={!isProjectActivated ? 'icon-btn' : 'icon-btn-move'} onClick={() => handleExpertiseClick("song")}>
                 <IoMusicalNotes/>
               </button>
-              <button className='icon-btn' onClick={() => handleExpertiseClick("photo")}>
+              <button className={!isProjectActivated ? 'icon-btn' : 'icon-btn-move'} onClick={() => handleExpertiseClick("photo")}>
                 <MdAddAPhoto />
               </button>
             </div>
@@ -97,6 +106,8 @@ const IntroductionSection = () => {
                   <h2>{selectedExpertise.title}</h2>
                   <br />
                   <TextWriter content={selectedExpertise.description} />
+                  <br />
+                  <button onClick={() => goToProjects()}>Projects</button>
                 </div>
               </div>
             </article>
@@ -109,10 +120,10 @@ const IntroductionSection = () => {
                   animate="anim"  
                 >
               <div className='right-icon-container'>
-                <button className='icon-btn' onClick={() => handleExpertiseClick("design")}>
+                <button className={!isProjectActivated ? 'icon-btn' : 'icon-btn-move'} onClick={() => handleExpertiseClick("design")}>
                   <MdDesignServices />
                 </button>
-                <button className='icon-btn' onClick={() => handleExpertiseClick("system")}>
+                <button className={!isProjectActivated ? 'icon-btn' : 'icon-btn-move'} onClick={() => handleExpertiseClick("system")}>
                   <FaQrcode/>
                 </button>
               </div>
