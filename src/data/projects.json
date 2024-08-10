@@ -4,7 +4,7 @@
     "projects":[
       {
         "name":"React Todo List",
-        "img": "src/assets/profilbild-casper-svartvit.jpg",
+        "img": "src/assets/web_project_jarekon.png",
         "description":"A simple todo list application built with React",
         "url":"https://github.com/cappeloow/react-todo-list"
       },

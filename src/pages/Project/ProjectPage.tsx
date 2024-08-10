@@ -2,13 +2,16 @@ import React, { useState } from 'react'
 import { IoMusicalNotes, IoCodeSlash } from "react-icons/io5";
 import { MdAddAPhoto, MdDesignServices } from "react-icons/md";
 import { FaQrcode } from "react-icons/fa";
-import { IoPlaySharp } from "react-icons/io5";
+import { IoChevronBackCircle } from "react-icons/io5";
 import data from '../../data/projects.json';
-import project_jarekon from '../../assets/web_project_jarekon.png';
+
 import { ICategory } from '../../interfaces';
 const ProjectPage = () => { 
   const [category, setCategory] = useState<ICategory>(data[0]);
-  const [project, setProject] = useState(data[1].projects[0]);
+  const [project, setProject] = useState(data[0].projects[0]);
+
+  const [showBtn, isShowBtn] =useState(false); 
+  const [isMinimizedImage, setIsMinimizedImage] = useState(false);
   console.log(data);
 
   return (
@@ -35,15 +38,23 @@ const ProjectPage = () => {
         </aside>
       </section>
       
-      <section className='right-project-section'>
+      <section className='right-project-section'
+      onMouseEnter={() => isShowBtn(true)} 
+      onMouseLeave={() => isShowBtn(false)}
+      >
         <div className='project-title-container'>
           <h1>{category.categoryName}</h1>
         </div>
         <div className='project-main-container'>
-          <div className='project-img-container'>
-            <img src={project.img} alt="" />
+          <div className={!isMinimizedImage ? 'project-img-container' :"minimized-project-img-container"}>
+            <img src={project.img} alt="" 
+            onClick={() => setIsMinimizedImage(false)}
+            />
+            {showBtn && !isMinimizedImage && <button
+            onClick={() => setIsMinimizedImage(true)}
+            ><IoChevronBackCircle/></button>}
           </div>
-          <div className='project-content-container'>
+          <div className={!isMinimizedImage ? 'project-content-container' :"expanded-project-content-container"}>
             <div>
               <h2>{project.name}</h2>
             </div>
