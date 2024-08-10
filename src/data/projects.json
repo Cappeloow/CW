@@ -1,0 +1,135 @@
+[
+  {
+    "categoryName":"Web Development",
+    "projects":[
+      {
+        "name":"React Todo List",
+        "img": "src/assets/profilbild-casper-svartvit.jpg",
+        "description":"A simple todo list application built with React",
+        "url":"https://github.com/cappeloow/react-todo-list"
+      },
+      {
+        "name":"Next.js Blog",
+        "img": "src/assets/profilbild-casper-svartvit.jpg",
+        "description":"A blog application built with Next.js and Tailwind CSS",
+        "url":"https://github.com/cappeloow/nextjs-blog"
+      },
+      {
+        "name":"Next.js Blog",
+        "img": "src/assets/profilbild-casper-svartvit.jpg",
+        "description":"A blog application built with Next.js and Tailwind CSS",
+        "url":"https://github.com/cappeloow/nextjs-blog"
+      },
+      {
+        "name":"Jarekon",
+        "img": "src/assets/profilbild-casper-svartvit.jpg",
+        "description":"A blog starter built with Gatsby and MDX",
+        "url":"https://github.com/cappeloow/gatsby-starter-blog"
+      }
+    ]
+  },
+  {
+    "categoryName":"Sing & Songwriting",
+    "projects":[
+      {
+        "name":"React Todo List",
+        "img": "src/assets/profilbild-casper-svartvit.jpg",
+        "description":"A simple todo list application built with React",
+        "url":"https://github.com/cappeloow/react-todo-list"
+      },
+      {
+        "name":"Next.js Blog",
+        "img": "src/assets/profilbild-casper-svartvit.jpg",
+        "description":"A blog application built with Next.js and Tailwind CSS",
+        "url":"https://github.com/cappeloow/nextjs-blog"
+      },
+      {
+        "name":"Jarekon",
+        "img": "src/assets/profilbild-casper-svartvit.jpg",
+        "description":"A blog starter built with Gatsby and MDX",
+        "url":"https://github.com/cappeloow/gatsby-starter-blog"
+      },
+      {
+        "name":"Jarekon",
+        "img": "src/assets/profilbild-casper-svartvit.jpg",
+        "description":"A blog starter built with Gatsby and MDX",
+        "url":"https://github.com/cappeloow/gatsby-starter-blog"
+      },
+      {
+        "name":"Jarekon",
+        "img": "src/assets/profilbild-casper-svartvit.jpg",
+        "description":"A blog starter built with Gatsby and MDX",
+        "url":"https://github.com/cappeloow/gatsby-starter-blog"
+      },
+      {
+        "name":"Jarekon",
+        "img": "src/assets/profilbild-casper-svartvit.jpg",
+        "description":"A blog starter built with Gatsby and MDX",
+        "url":"https://github.com/cappeloow/gatsby-starter-blog"
+      },
+      {
+        "name":"Jarekon",
+        "img": "src/assets/profilbild-casper-svartvit.jpg",
+        "description":"A blog starter built with Gatsby and MDX",
+        "url":"https://github.com/cappeloow/gatsby-starter-blog"
+      }
+    ]
+  },
+  {
+    "categoryName":"Photography",
+    "projects":[
+      {
+        "name":"React Todo List",
+        "img": "src/assets/profilbild-casper-svartvit.jpg",
+        "description":"A simple todo list application built with React",
+        "url":"https://github.com/cappeloow/react-todo-list"
+      },
+      {
+        "name":"Jarekon",
+        "img": "src/assets/profilbild-casper-svartvit.jpg",
+        "description":"A blog starter built with Gatsby and MDX",
+        "url":"https://github.com/cappeloow/gatsby-starter-blog"
+      }
+    ]
+  },
+  {
+    "categoryName":"Design",
+    "projects":[
+      {
+        "name":"React Todo List",
+        "img": "src/assets/profilbild-casper-svartvit.jpg",
+        "description":"A simple todo list application built with React",
+        "url":"https://github.com/cappeloow/react-todo-list"
+      },
+      {
+        "name":"Next.js Blog",
+        "img": "src/assets/profilbild-casper-svartvit.jpg",
+        "description":"A blog application built with Next.js and Tailwind CSS",
+        "url":"https://github.com/cappeloow/nextjs-blog"
+      },
+      {
+        "name":"Jarekon",
+        "img": "src/assets/profilbild-casper-svartvit.jpg",
+        "description":"A blog starter built with Gatsby and MDX",
+        "url":"https://github.com/cappeloow/gatsby-starter-blog"
+      }
+    ]
+  },
+  {
+    "categoryName":"System Development",
+    "projects":[
+      {
+        "name":"React Todo List",
+        "img": "src/assets/profilbild-casper-svartvit.jpg",
+        "description":"A simple todo list application built with React",
+        "url":"https://github.com/cappeloow/react-todo-list"
+      },
+      {
+        "name":"Next.js Blog",
+        "img": "src/assets/profilbild-casper-svartvit.jpg",
+        "description":"A blog application built with Next.js and Tailwind CSS",
+        "url":"https://github.com/cappeloow/nextjs-blog"
+      }
+    ]
+  }
+]
