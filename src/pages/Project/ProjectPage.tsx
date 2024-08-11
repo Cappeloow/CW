@@ -12,26 +12,43 @@ const ProjectPage = () => {
 
   const [showBtn, isShowBtn] =useState(false); 
   const [isMinimizedImage, setIsMinimizedImage] = useState(false);
-  console.log(data);
+
+
 
   return (
     <main className='projects'>
       <section className='left-project-section'>
         <aside>
           <ul>
-          <li className='icon-btn' onClick={() => setCategory(data[0])}>
+            <li className='icon-btn' onClick={() => {
+              setCategory(data[0]);
+              setProject(data[0].projects[0]);
+            }}>
               <IoCodeSlash/>
             </li>
-            <li className='icon-btn' onClick={() => setCategory(data[1])}>
+            <li className='icon-btn' onClick={() => {
+              setCategory(data[1])
+              setProject(data[1].projects[0]);
+            }}>
               <IoMusicalNotes/>
             </li>
-            <li className='icon-btn' onClick={() => setCategory(data[2])}>
+
+            <li className='icon-btn' onClick={() => {
+              setCategory(data[2])
+              setProject(data[2].projects[0]);
+            }}>
               <MdAddAPhoto/>
             </li>
-            <li className='icon-btn' onClick={() => setCategory(data[3])}>
+            <li className='icon-btn' onClick={() => {
+              setCategory(data[3])
+              setProject(data[3].projects[0]);
+            }}>
               <MdDesignServices/>
             </li>
-            <li className='icon-btn' onClick={() => setCategory(data[4])}>
+            <li className='icon-btn' onClick={() => {
+              setCategory(data[4])
+              setProject(data[4].projects[0]);
+            }}>
               <FaQrcode/>
             </li>
           </ul>
