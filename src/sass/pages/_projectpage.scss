@@ -1,5 +1,5 @@
 @use "../abstracts" as *;
-
+@use "../components/buttons";
 
 main.projects {
   height:85vh;
@@ -34,6 +34,7 @@ main.projects {
         animation: moveElementFromRightToZero 2s ease-in;
       
         li {
+          transition:0.5s;
           position: relative;
           animation:electricChockElement 2s ease-in;
           animation-delay:2.1s;
@@ -49,6 +50,15 @@ main.projects {
             opacity: 0; 
             animation: showAfter 0.1s ease-in forwards; 
             animation-delay: 2s; 
+          }
+        }
+        .activated-btn {
+          @extend .icon-btn;
+          box-shadow: 0 0 7px 3px rgba(0, 151, 178, 1); 
+          animation:none;
+          left:20px; 
+          &::after {
+            width:0px;
           }
         }
       }
