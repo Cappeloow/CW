@@ -137,17 +137,50 @@ main.projects {
       .project-content-container {
         border-top-right-radius:12px;
         border-bottom-right-radius:12px;
+        padding:10px;
         width:50%;
-        border:1px solid white;
+        border:1px solid $border-color;
         transition:1s;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .techStack-container{
+          height:50px;
+          width:100%;
+          p {
+            letter-spacing: 1px;
+            font-size: 14px;
+          }
+          ul {
+            width:100%;
+            display:flex;
+            li {
+              color:white;
+              font-size:30px;
+            }
+          }
+        }
       }
       
       .expanded-project-content-container{
-        border-top-right-radius:12px;
-        border-bottom-right-radius:12px;
+        border-radius:12px;
         width:100%;
-        border:1px solid white;
+        border:1px solid $border-color;
         transition:1s;
+        p {
+          letter-spacing: 1px;
+          font-size: 14px;
+        }
+        ul {
+          width:100%;
+          display:flex;
+          gap:1px;
+          li {
+            color:white;
+            font-size:30px;
+          }
+        }
       }
 
     }

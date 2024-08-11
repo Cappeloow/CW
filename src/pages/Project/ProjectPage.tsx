@@ -5,12 +5,13 @@ import { FaQrcode } from "react-icons/fa";
 import { IoChevronBackCircle } from "react-icons/io5";
 import data from '../../data/projects.json';
 
-import { ICategory } from '../../interfaces';
+import { ICategory, IProject } from '../../interfaces';
+import TechStackContainer from './components/TechStackContainer';
 const ProjectPage = () => { 
   const [category, setCategory] = useState<ICategory>(
     data[0]
   );
-  const [project, setProject] = useState(data[0].projects[0]);
+  const [project, setProject] = useState<IProject>(data[0].projects[0]);
   const [loadedElement, setLoadedElement] = useState(false);
   const [showBtn, isShowBtn] =useState(false); 
   const [isMinimizedImage, setIsMinimizedImage] = useState(false);
@@ -78,12 +79,13 @@ const ProjectPage = () => {
             ><IoChevronBackCircle/></button>}
           </div>
           <div className={!isMinimizedImage ? 'project-content-container' :"expanded-project-content-container"}>
+            {project.techStack && <TechStackContainer techStack={project.techStack}/>}
+            <article>
             <div>
               <h2>{project.name}</h2>
             </div>
             <br />
-            <article>
-              <p>{project.description}</p>
+            <p>{project.description}</p>
             </article>
           </div>
         </div>

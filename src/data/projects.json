@@ -11,8 +11,14 @@
       {
         "name":"Next.js Blog",
         "img": "src/assets/profilbild-casper-svartvit.jpg",
-        "description":"A blog application built with Next.js and Tailwind CSS",
-        "url":"https://github.com/cappeloow/nextjs-blog"
+        "description":"A blog starter built with Gatsby and MDX lorem. A blog starter built with Gatsby and MDX lorem. A blog starter built with Gatsby and MDX lorem. A blog starter built with Gatsby and MDX lorem. A blog starter built with Gatsby and MDX lorem.",
+        "url":"https://github.com/cappeloow/nextjs-blog",
+        "techStack":[ 
+          "react",
+          "sass",
+          "html",
+          "node"
+        ]
       },
       {
         "name":"Next.js Blog",
