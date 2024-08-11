@@ -23,7 +23,7 @@ main.projects {
       position: relative;
       animation: electricChock 2s ease-in;
       animation-delay: 2s;
-      border-right: 1px solid white;
+      border-right: 1px solid $border-color;
       ul {
         height: 100%;
         width: 100px;
@@ -45,7 +45,7 @@ main.projects {
             right: -20px; 
             width: 20px; 
             height: 1px;
-            background-color: white;
+            background-color: $border-color;
             transform: translateY(-50%);
             opacity: 0; 
             animation: showAfter 0.1s ease-in forwards; 
@@ -207,7 +207,7 @@ main.projects {
     border-right: 1px solid #0097b2;
   }
   100% {
-    border-right: 1px solid #ffffff;
+    border-right: 1px solid $border-color;
   }
 }
 
