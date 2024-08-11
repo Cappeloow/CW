@@ -88,11 +88,15 @@ const ProjectPage = () => {
           </div>
         </div>
         <div className='project-pagination-container'>
-          {category.projects && category.projects.slice(0, 5).map((project, idx) => {
+          {category.projects && category.projects.slice(0, 5).map((proj, idx) => {
             return (
-              <button key={idx} onClick={() => setProject(project)}>
-                {idx + 1} 
-              </button>
+              <button
+              className={proj.description === project.description ? 'activated-pagination-btn' : 'pagination-btn'}
+              key={idx}
+              onClick={() => setProject(proj)}
+            >
+              {idx + 1}
+            </button>
             );
           })}
         </div>

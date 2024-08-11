@@ -158,13 +158,21 @@ main.projects {
       display: flex;
       justify-content: center;
       gap:20px;
-      button {
+      .pagination-btn {
+        transition:0.5s;
+        cursor:pointer;
         border-radius:12px;
         color:black;
+        font-size:17px;
         width:40px;
         height:40px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.5);
         border:none;
+      }
+      .activated-pagination-btn {
+      box-shadow: 0 0 7px 3px rgba(0, 151, 178, 1); 
+       @extend .pagination-btn;
+        transform: scale(1.1);
       }
     }
 
