@@ -5,4 +5,18 @@
     border-left:2px solid white;
     padding-left:20px;
     letter-spacing: 2px;
+     div:first-child{
+      h1 {font-size: 26px;}
+      @include large {
+        h1 {font-size: 40px;}
+      } 
+    }
+     div:last-child{
+      p{
+        font-size:10px;
+        @include large {
+          font-size: 16px;
+        } 
+      }
+    }
   }
