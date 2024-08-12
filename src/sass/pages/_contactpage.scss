@@ -31,20 +31,19 @@ main.contact {
       position:absolute;
       display:flex;
       button {
-        margin-top:200px;
         width:100px;
         animation:revealBtnsFromLetter 2s ease-in-out;
+        bottom:-200px;
+        margin:20px;
       }
       button:first-child{
         width:100px;
-        margin-top:160px;
         z-index:3;
       }
       button:nth-child(2) {
         z-index:3;
       }
       button:last-child{
-        margin-top:160px;
         z-index:3;
       }
     }
@@ -55,11 +54,11 @@ main.contact {
 @keyframes revealBtnsFromLetter {
   0% {
     margin:0px;
-    transform: translateY(100px);
+    transform: translateY(-100px);
     z-index:1;
   }
   50% {
-    transform: translateY(-100px);
+    transform: translateY(-250px);
   }
   60% {
     z-index:3;
