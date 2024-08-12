@@ -2,61 +2,110 @@
 @use "../components/buttons";
 
 main.projects {
-  height:85vh;
-  padding:20px;
-  padding-left:60px;
-  padding-right:120px;
+  height:auto;
   width:100%;
   display: flex;
-  flex-direction: row;
-
+  flex-direction: column;
+  
+  @include small {
+    padding:20px;
+    flex-direction: row;
+  }
+  @include large{
+  padding-left:60px;
+  padding-right:60px;
+  }
   .left-project-section {
-    width: 350px;
-    height: 100%;
-    display: flex;
+    position:sticky;
+    width:100%;
+    height:50px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    display:none;
+    @include small {
+      display:flex;
+      height:auto;
+      width: 350px;
+      padding:10px;
+    }
+    @include x-large{
+      position:relative;
+    }
   
     aside {
-      width: 120px;
-      height: 500px;
+      display:flex;
+      width:100%;
+      height: 50px;
       position: relative;
       animation: electricChock 2s ease-in;
       animation-delay: 2s;
       border-right: 1px solid $border-color;
+      @include small {
+        width: 120px;
+        height: 500px;
+      }
       ul {
+
         height: 100%;
-        width: 100px;
+        width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        padding:5px;
         justify-content: space-between;
         position: relative; 
         animation: moveElementFromRightToZero 2s ease-in;
-      
+        @include small {
+          background: none;
+          padding:0px;
+          width: 100px;
+          flex-direction: column;
+        }
+
         li {
+          height:40px;
+          width:40px;
           transition:0.5s;
           position: relative;
           animation:electricChockElement 2s ease-in;
           animation-delay:2.1s;
+          @include small {
+            width: initial;
+            height: 50px;
+          }
           &::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            right: -20px; 
-            width: 20px; 
-            height: 1px;
-            background-color: $border-color;
-            transform: translateY(-50%);
-            opacity: 0; 
-            animation: showAfter 0.1s ease-in forwards; 
-            animation-delay: 2s; 
+            @include small {
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: -20px; 
+              width: 20px; 
+              height: 1px;
+              background-color: $border-color;
+              transform: translateY(-50%);
+              opacity: 0; 
+              animation: showAfter 0.1s ease-in forwards; 
+              animation-delay: 2s; 
+            }
+          }
+        }
+        .icon-btn {
+          font-size:15px;
+          
+          @include small {
+            font-size:35px;
           }
         }
         .activated-btn {
           @extend .icon-btn;
           box-shadow: 0 0 7px 3px rgba(0, 151, 178, 1); 
           animation:none;
-          left:20px; 
+          height:40px;
+          font-size:24px;
+          @include small {
+            left:20px; 
+            height:50px;
+            font-size:35px;
+          }
           &::after {
             width:0px;
           }
@@ -65,30 +114,75 @@ main.projects {
     }
   }
   .right-project-section {
-    flex:1;
-    height:100%;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:auto;
     .project-title-container{
-      height:110px;
+      height:auto;
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      @include small {
+        padding:0px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom:10px;
+      }
+      h1{
+        font-size:25px;
+        padding:10px;
+        @include small {
+          padding:0px;
+          font-size:40px;
+        }
+      }
+      .directional-icon {
+        min-width:15%;
+        font-size:40px;
+        @include small {
+          display:none;
+        }
+      }
+
     }
 
     .project-main-container{
-      height:420px;
       border-radius:12px;
       max-width: 1000px;
       display:flex;
-      flex-direction: row;
+      flex-direction: column;
+
+      @include x-large {
+        flex-direction: row;
+      }
 
       .project-img-container {
-        width: 1000px;
-        height: 420px;
-        border: 1px solid white;
-        border-bottom-left-radius: 12px;
-        border-top-left-radius: 12px;
+        width:auto;
+        height:250px;
         transition:1s;
         position:relative;
         overflow: hidden;
+        @include small {
+          width: 350px;
+          border-radius: 12px;
+        }
+        @include medium {
+          width: 400px;
+          height: 280px; 
+        }
+        @include large {
+          width: 550px;
+          height: 350px; 
+        }
+        @include x-large {
+          width: 800px;
+          height: 433px; 
+          border-bottom-left-radius: 12px;
+          border-top-right-radius: 0px;
+          border-bottom-right-radius: 0px;
+        }
+
         img {
           object-fit:cover;
           width: 100%;
@@ -103,14 +197,17 @@ main.projects {
           position:absolute;
           z-index:1;
           color:#e6e6e6;
-          border-left:1px solid rgba(0, 0, 0, 0.326);
-          width:40px;
-          height:100%;
-          right:0px;
-          top:0px;
           font-size: 40px;
           cursor: pointer;
           transition:1s;
+          border-left:1px solid rgba(0, 0, 0, 0.326);
+          background-color: rgba(255, 255, 255, 0.468);
+          height:100%;
+          right:0px;
+          top:0px;
+          transform: none;
+          width:40px;
+        
           
           &:hover {
             width:55px;
@@ -123,7 +220,8 @@ main.projects {
         height:75px;
         width:75px;
         overflow: hidden; 
-        margin-right:5px;
+        margin-right:10px;
+        margin-left:10px;
         border-radius:12px;
         animation: pulse 1.7s infinite linear;
         cursor:pointer;
@@ -135,15 +233,25 @@ main.projects {
       }
       
       .project-content-container {
-        border-top-right-radius:12px;
         border-bottom-right-radius:12px;
-        padding:10px;
-        width:50%;
-        border:1px solid $border-color;
+        border-bottom-left-radius:12px;
+        height:auto;
+        width:auto;
         transition:1s;
         display:flex;
         flex-direction: column;
-        justify-content: space-between;
+        padding:10px;
+        @include small {
+          gap:10px;
+          padding:0px;
+        }
+        @include x-large {
+          border:1px solid $border-color;
+          padding:10px;
+          width:50%;
+          border-bottom-left-radius:0px;
+          border-top-right-radius: 12px;
+        }
 
         .techStack-container{
           height:50px;
@@ -165,10 +273,9 @@ main.projects {
       
       .expanded-project-content-container{
         border-radius:12px;
-        padding:10px;
         width:100%;
-        border:1px solid $border-color;
         transition:1s;
+        padding:10px;
         p {
           letter-spacing: 1px;
           font-size: 14px;
@@ -187,11 +294,19 @@ main.projects {
     }
 
     .project-pagination-container {
-      padding:30px;
+      margin-top:10px;
+      height:70px;
       max-width: 1000px;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       gap:20px;
+      padding:10px;
+      @include small {
+        padding:0px;
+      }
+      @include large {
+        margin-top:20px;
+      }
       .pagination-btn {
         transition:0.5s;
         cursor:pointer;

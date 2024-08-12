@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { IoMusicalNotes, IoCodeSlash } from "react-icons/io5";
 import { MdAddAPhoto, MdDesignServices } from "react-icons/md";
-import { FaQrcode } from "react-icons/fa";
+import { FaQrcode,FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import { IoChevronBackCircle } from "react-icons/io5";
 import data from '../../data/projects.json';
 
@@ -21,6 +21,7 @@ const ProjectPage = () => {
       setLoadedElement(true);
     },2000)
   },[]);
+  
 
   return (
     <main className='projects'>
@@ -68,6 +69,16 @@ const ProjectPage = () => {
       >
         <div className='project-title-container'>
           <h1>{category.categoryName}</h1>
+          <FaArrowAltCircleRight 
+          className='directional-icon' 
+          onClick={() => {
+            const currentIndex = data.findIndex(item => item.categoryName === category.categoryName);
+            const newIndex = (currentIndex - 1 + data.length) % data.length;
+
+            setCategory(data[newIndex]);
+            setProject(data[newIndex].projects[0]);
+          }}
+          />
         </div>
         <div className='project-main-container'>
           <div className={!isMinimizedImage ? 'project-img-container' :"minimized-project-img-container"}>

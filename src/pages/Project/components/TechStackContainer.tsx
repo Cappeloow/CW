@@ -25,7 +25,6 @@ const techIcons: { [key: string]: JSX.Element } = {
 const TechStackContainer: React.FC<Props> = ({ techStack }) => {
   return (
     <div className='techStack-container'>
-      <p>Techstack</p>
       <ul>
         {techStack.map((tech, idx) => (
           <li key={idx}>
