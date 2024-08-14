@@ -8,6 +8,7 @@ import casperbild from '../../../assets/profilbild-casper-svartvit.jpg';
 import { animate, motion, useMotionValue, useTransform } from 'framer-motion';
 import { cursorVariants, leftIconContainerMovement, rightIconContainerMovement } from '../../../animations/element';
 import TextWriter from '../../../animations/components/TextWriter';
+import { GrApps } from 'react-icons/gr';
 
 interface IExpertise  {
   title: string;
@@ -32,7 +33,7 @@ const expertiseList:IExpertise[] = [
     description: "Designing eye-catching visuals and engaging animations."
   }, 
   {
-    title: "System Development",
+    title: "App Development",
     description: "Building robust systems to streamline your operations."
   }
 ];
@@ -88,13 +89,13 @@ const IntroductionSection = () => {
                 animate="anim"  
               >
             <div className='left-icon-container'>
+              <button style={{visibility: "hidden"}}  className={!isProjectActivated ? 'icon-btn' : 'icon-btn-move'} onClick={() => handleExpertiseClick("song")}>
+                <IoMusicalNotes/>
+              </button>
               <button className={!isProjectActivated ? 'icon-btn' : 'icon-btn-move'} onClick={() => handleExpertiseClick("web")}>
                 <IoCodeSlash />
               </button>
-              <button className={!isProjectActivated ? 'icon-btn' : 'icon-btn-move'} onClick={() => handleExpertiseClick("song")}>
-                <IoMusicalNotes/>
-              </button>
-              <button className={!isProjectActivated ? 'icon-btn' : 'icon-btn-move'} onClick={() => handleExpertiseClick("photo")}>
+              <button style={{visibility: "hidden"}} className={!isProjectActivated ? 'icon-btn' : 'icon-btn-move'} onClick={() => handleExpertiseClick("photo")}>
                 <MdAddAPhoto />
               </button>
             </div>
@@ -130,7 +131,7 @@ const IntroductionSection = () => {
                   <MdDesignServices />
                 </button>
                 <button className={!isProjectActivated ? 'icon-btn' : 'icon-btn-move'} onClick={() => handleExpertiseClick("system")}>
-                  <FaQrcode/>
+                  <GrApps/>
                 </button>
               </div>
             </motion.div>

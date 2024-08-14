@@ -35,6 +35,29 @@ main.about {
           width: 650px;
           height: 550px;
         }
+        
+        .download-cv-btn {
+          position:absolute;
+          right:0px;
+          color:black;
+          font-weight: 600;
+          padding:5px;
+          width:100px;
+          border:1px solid rgba(128, 128, 128, 0.39);
+          font-size:11px;
+          height:50px;
+          display:flex;
+          align-items: center;
+          justify-content: center;
+          border-top-right-radius:12px;
+          border-bottom-left-radius:12px;
+          &:hover {
+            color:white;
+            background-color: black;
+            transition:0.5s;
+          }
+        }
+
         img {
           border-radius: 12px;
           width:100%;

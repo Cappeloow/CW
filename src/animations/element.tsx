@@ -20,6 +20,25 @@ export const elementUp: Variants = {
     },
   },
 };
+export const elementDown: Variants = {
+  init: {
+    opacity: 0,
+    y: 50, 
+    transition: {
+      ease: [0.33, 1, 0.68, 1],
+      duration: 0.3,
+    },
+  },
+  anim: {
+    opacity: 1, 
+    y: 0, 
+    transition: {
+      type: "spring",
+      bounce: 0.1,
+      duration: 1.1,
+    },
+  },
+};
 export const elementFromRightToLeft: Variants = {
   init: {
     opacity: 0, // Start with opacity 0

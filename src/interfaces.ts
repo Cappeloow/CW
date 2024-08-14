@@ -7,7 +7,7 @@ export interface IProject {
     name: string;
     description: string;
     img: string;
-    url: string;
+    url?: string;
     techStack?: string[];
     duration?: string;
 }

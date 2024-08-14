@@ -7,7 +7,7 @@ const Layout = ({ children }:LayoutRouteProps) => {
  <header>
    <section>
     <a href="/">
-     <img src={cwIcon} alt="CW logo" height={70} width={70}/>
+     <img src={cwIcon} alt="CW logo"/>
     </a>
    </section>
    <nav>
