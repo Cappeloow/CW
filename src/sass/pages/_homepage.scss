@@ -11,6 +11,10 @@ main.home {
   // background-image: radial-gradient(circle at center, 
   //                                   rgba(255, 235, 59, 0.089) 0%, 
   //                                   rgba(0, 0, 0, 0) 100%);
+
+  @include medium{
+    min-height: 95vh;
+  }
   .main-content {
     width:100%;
     display:flex;
