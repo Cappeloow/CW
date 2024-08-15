@@ -7,11 +7,29 @@ import { FaLinkedin } from "react-icons/fa";
 import { FcDocument } from 'react-icons/fc';
 import { motion } from 'framer-motion';
 import { elementDown, elementUp } from '../../animations/element';
+import { techIcons } from '../../assets/icons-export';
 
+const experienceList = [
+  'next.js',
+  'react',
+  'reactNative',
+  'sass',
+  "html",
+  "css",
+  "java",
+  "dotnet",
+  "typescript",
+  "node",
+  "wp",
+  "sql",
+  "mongodb",
+  "figma",
+  "ga4"
+]
 const AboutPage = () => {
   return (
     <main className='about'>
-      <div className='container'>
+      <div className='container'> 
         <section className='about-image-section'>
           <ProfileHeader/>
           <div className='about-image-container'>
@@ -26,8 +44,8 @@ const AboutPage = () => {
               <a href="https://github.com/Cappeloow" target="_blank" rel="noopener noreferrer">
                 <FaGithub/>
               </a>
-            </div>        
-          </div>
+            </div>    
+            </div>   
         </section>
 
     
@@ -51,6 +69,13 @@ const AboutPage = () => {
           During the pandemic, I bought a bicycle to undertake a 2200 km journey from Bromölla to Kiruna, where I lived in a tent for 17 days and finished by climbing Kebnekaise. This adventure has been significant for me in my work life as well, as I learned the importance of breaking down goals into milestones and celebrating victories along the way.
         </p>
         </motion.div>
+        <ul className='skills-container'>
+              {experienceList.map((tech, idx) => (
+                <li key={idx}>
+                  {techIcons[tech] && <span>{techIcons[tech]}</span>}
+                </li>
+              ))}
+          </ul>
       </section>
     </div>
     </main>
