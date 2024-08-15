@@ -4,7 +4,6 @@ import { MdDesignServices } from "react-icons/md";
 import { GrApps } from "react-icons/gr";
 import {FaArrowAltCircleRight } from "react-icons/fa";
 import { IoChevronBackCircle } from "react-icons/io5";
-import data from '../../data/projects.json';
 import { projectList } from '../../data/projects';
 import { ICategory, IProject } from '../../interfaces';
 import TechStackContainer from './components/TechStackContainer';
