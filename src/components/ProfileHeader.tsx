@@ -1,4 +1,3 @@
-import React from 'react'
 import { elementFromRightToLeft, elementUp } from '../animations/element'
 import { motion } from 'framer-motion'
 

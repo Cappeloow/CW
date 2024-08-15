@@ -1,7 +1,4 @@
-import React from 'react'
 import IntroductionSection from './components/IntroductionSection'
-import { motion } from 'framer-motion';
-import { elementFromRightToLeft, elementUp } from '../../animations/element';
 import ProfileHeader from '../../components/ProfileHeader';
 const HomePage = () => {
 

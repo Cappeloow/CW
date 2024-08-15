@@ -1,12 +1,10 @@
-import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { IoMusicalNotes, IoCodeSlash } from "react-icons/io5";
 import { MdAddAPhoto, MdDesignServices } from "react-icons/md";
-import { FaQrcode } from "react-icons/fa";
 import { FaCirclePlay } from "react-icons/fa6";
 import casperbild from '../../../assets/profilbild-casper-svartvit.jpg';
-import { animate, motion, useMotionValue, useTransform } from 'framer-motion';
-import { cursorVariants, leftIconContainerMovement, rightIconContainerMovement } from '../../../animations/element';
+import { motion, } from 'framer-motion';
+import { leftIconContainerMovement, rightIconContainerMovement } from '../../../animations/element';
 import TextWriter from '../../../animations/components/TextWriter';
 import { GrApps } from 'react-icons/gr';
 

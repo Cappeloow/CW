@@ -1,10 +1,8 @@
-import React from 'react'
 import ProfileHeader from '../../components/ProfileHeader'
 import profilcasper from '../../assets/profilbild-casper-svartvit.jpg'
 
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FcDocument } from 'react-icons/fc';
 import { motion } from 'framer-motion';
 import { elementDown, elementUp } from '../../animations/element';
 import { techIcons } from '../../assets/icons-export';

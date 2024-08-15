@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import { IoMusicalNotes, IoCodeSlash } from "react-icons/io5";
-import { MdAddAPhoto, MdDesignServices } from "react-icons/md";
+import { useEffect, useState } from 'react'
+import { IoCodeSlash } from "react-icons/io5";
+import { MdDesignServices } from "react-icons/md";
 import { GrApps } from "react-icons/gr";
-import { FaQrcode,FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+import {FaArrowAltCircleRight } from "react-icons/fa";
 import { IoChevronBackCircle } from "react-icons/io5";
 import data from '../../data/projects.json';
 

@@ -1,5 +1,4 @@
-import React from 'react';
-import { RiNextjsFill } from "react-icons/ri"; // Import the necessary icons here
+import { RiNextjsFill } from "react-icons/ri"; 
 import { FaReact,FaSass,FaHtml5,FaCss3,FaJava, FaWordpress  } from "react-icons/fa";
 import { SiDotnet,SiTypescript,SiGoogleanalytics } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
