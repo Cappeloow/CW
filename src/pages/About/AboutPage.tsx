@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { motion } from 'framer-motion';
 import { elementDown } from '../../animations/element';
 import { techIcons } from '../../assets/icons-export';
+import cvPdf from '../../../images/Casper_CV.pdf';
 
 const experienceList = [
   'next.js',
@@ -32,7 +33,7 @@ const AboutPage = () => {
         <section className='about-image-section'>
           <ProfileHeader/>
           <div className='about-image-container'>
-            <a href='./images/Casper_CV.pdf' className="download-cv-btn" download>
+            <a href={cvPdf} className="download-cv-btn" download>
               Download CV
             </a>
             <img src={profilcasper} alt="" />
