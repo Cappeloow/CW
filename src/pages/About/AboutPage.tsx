@@ -15,7 +15,7 @@ const AboutPage = () => {
         <section className='about-image-section'>
           <ProfileHeader/>
           <div className='about-image-container'>
-            <a className="download-cv-btn" href="src/assets/Casper - CV English.pdf" title="" download>
+            <a className="download-cv-btn" href="src/assets/Casper CV.pdf" title="" download>
               Download CV
             </a>
             <img src={profilcasper} alt="" />

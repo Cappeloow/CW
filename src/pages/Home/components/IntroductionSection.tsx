@@ -34,7 +34,7 @@ const expertiseList:IExpertise[] = [
   }, 
   {
     title: "App Development",
-    description: "Building robust systems to streamline your operations."
+    description: "Building robust and scalable applications to streamline your operations and enhance productivity."
   }
 ];
 
