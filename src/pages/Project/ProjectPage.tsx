@@ -5,14 +5,14 @@ import { GrApps } from "react-icons/gr";
 import {FaArrowAltCircleRight } from "react-icons/fa";
 import { IoChevronBackCircle } from "react-icons/io5";
 import data from '../../data/projects.json';
-
+import { projectList } from '../../data/projects';
 import { ICategory, IProject } from '../../interfaces';
 import TechStackContainer from './components/TechStackContainer';
 const ProjectPage = () => { 
   const [category, setCategory] = useState<ICategory>(
-    data[0]
+    projectList[0]
   );
-  const [project, setProject] = useState<IProject>(data[0].projects[0]);
+  const [project, setProject] = useState<IProject>(projectList[0].projects[0]);
   const [loadedElement, setLoadedElement] = useState(false);
   const [showBtn, isShowBtn] =useState(false); 
   const [isMinimizedImage, setIsMinimizedImage] = useState(false);
@@ -29,9 +29,9 @@ const ProjectPage = () => {
       <section className='left-project-section'>
         <aside>
           <ul>
-            <li className={loadedElement && category == data[0] ? 'activated-btn' : "icon-btn"} onClick={() => {
-              setCategory(data[0]);
-              setProject(data[0].projects[0]);
+            <li className={loadedElement && category == projectList[0] ? 'activated-btn' : "icon-btn"} onClick={() => {
+              setCategory(projectList[0]);
+              setProject(projectList[0].projects[0]);
             }}>
               <IoCodeSlash/>
             </li>
@@ -48,15 +48,15 @@ const ProjectPage = () => {
             }}>
               <MdAddAPhoto/>
             </li> */}
-            <li className={category == data[1] ? 'activated-btn' : "icon-btn"} onClick={() => {
-              setCategory(data[1])
-              setProject(data[1].projects[0]);
+            <li className={category == projectList[1] ? 'activated-btn' : "icon-btn"} onClick={() => {
+              setCategory(projectList[1])
+              setProject(projectList[1].projects[0]);
             }}>
               <MdDesignServices/>
             </li>
-            <li className={category == data[2] ? 'activated-btn' : "icon-btn"}onClick={() => {
-              setCategory(data[2])
-              setProject(data[2].projects[0]);
+            <li className={category == projectList[2] ? 'activated-btn' : "icon-btn"}onClick={() => {
+              setCategory(projectList[2])
+              setProject(projectList[2].projects[0]);
             }}>
               <GrApps/>
             </li>
@@ -73,11 +73,11 @@ const ProjectPage = () => {
           <FaArrowAltCircleRight 
           className='directional-icon' 
           onClick={() => {
-            const currentIndex = data.findIndex(item => item.categoryName === category.categoryName);
-            const newIndex = (currentIndex - 1 + data.length) % data.length;
+            const currentIndex = projectList.findIndex(item => item.categoryName === category.categoryName);
+            const newIndex = (currentIndex - 1 + projectList.length) % projectList.length;
 
-            setCategory(data[newIndex]);
-            setProject(data[newIndex].projects[0]);
+            setCategory(projectList[newIndex]);
+            setProject(projectList[newIndex].projects[0]);
           }}
           />
         </div>
