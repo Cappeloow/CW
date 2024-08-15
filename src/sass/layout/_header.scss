@@ -1,9 +1,10 @@
 @use "../abstracts" as *;
 
 header {
-    border-bottom:1px solid white;
+    border-bottom:1px solid $border-color;
     height:90px;
     width:100%;
+    background-color: $background-color-dark;
     display:flex;
     flex-direction: row;
 

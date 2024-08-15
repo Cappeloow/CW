@@ -1,6 +1,84 @@
 @use "../abstracts" as *;
 
 footer {
-    border-top:1px solid white;
-    height:10vh;
+    border-top: 1px solid $border-color;
+    background-color: $background-color-light;
+    color:$background-color-dark;
+    padding-top:10px;
+    width:100%;
+    flex-direction: column;
+    cursor:pointer;
+    .main-footer-container{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        cursor:pointer;
+        @include medium {
+            flex-direction: row;
+        }
+    .social-media-section {
+        flex-direction: row;
+        font-size: 40px;
+        display:flex;
+        width:100%;
+        gap:10px;
+        justify-content: space-around;
+        @include medium {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width:25%;
+        }
+    }
+    .general-info-section {
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        letter-spacing: 1px;
+        padding:10px;
+        justify-content: center;
+        align-items: center;
+        border-top:1px solid $background-color-dark;
+        border-bottom:1px solid $background-color-dark;
+        div {
+            display:flex;
+            gap:15px;
+            flex-direction: column;
+            p {
+                font-size:11px;
+                @include small {
+                    font-size:14px;
+                }
+            }
+        }
+        @include medium {
+            width:50%;
+            border:none;
+        }
+    }
+    .quick-links-section{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        gap:15px;
+        padding:10px;
+        justify-content: space-around;
+        @include medium {
+            width:25%;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
 }
+.copyright-container{
+    border-top:1px solid $background-color-dark;
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size:9px;  
+    }
+}
+}
+
