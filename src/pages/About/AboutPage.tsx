@@ -26,33 +26,15 @@ const experienceList = [
 ]
 const AboutPage = () => {
 
-  const onDownloadPdf = () => {
-    
-
-    fetch("images/Casper_CV.pdf").then((response) => {
-        response.blob().then((blob) => {
-        
-            const fileURL =
-                window.URL.createObjectURL(blob);
-            let alink = document.createElement("a");
-            alink.href = fileURL;
-            alink.download = "Casper_CV.pdf";
-            alink.click();
-        });
-    });
-};
-
-
-
   return (
     <main className='about'>
       <div className='container'> 
         <section className='about-image-section'>
           <ProfileHeader/>
           <div className='about-image-container'>
-            <p onClick={onDownloadPdf} className="download-cv-btn">
+            <a href='./images/Casper_CV.pdf' className="download-cv-btn" download>
               Download CV
-            </p>
+            </a>
             <img src={profilcasper} alt="" />
             <div>
               <a href="https://www.linkedin.com/in/cw1996/" target="_blank" rel="noopener noreferrer">

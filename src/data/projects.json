@@ -4,7 +4,7 @@
     "projects":[
       {
         "name":"Jarekon.se",
-        "img": "/images/web_project_jarekon.png",
+        "img": "./images/web_project_jarekon.png",
         "description": "A fully functional website created for a client in the car repair industry, aimed at boosting their online presence. I handled the entire process, from designing and developing the site to capturing photos and crafting content.",
         "url":"www:https//jarekon.se",
         "techStack":[ 
