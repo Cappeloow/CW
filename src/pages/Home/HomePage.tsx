@@ -16,9 +16,6 @@ const HomePage = () => {
         <IntroductionSection />
       </div>
         <div className='slogan-section'>
-            <span>
-              <i>Let me tell you about Casper</i>
-            </span>
         </div>
     </main>
   )
