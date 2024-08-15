@@ -4,7 +4,7 @@ import profilcasper from '../../assets/profilbild-casper-svartvit.jpg'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { motion } from 'framer-motion';
-import { elementDown, elementUp } from '../../animations/element';
+import { elementDown } from '../../animations/element';
 import { techIcons } from '../../assets/icons-export';
 
 const experienceList = [

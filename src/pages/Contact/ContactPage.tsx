@@ -1,4 +1,3 @@
-import React from 'react'
 import letterfront from '../../assets/letter-front.png';
 import { FaLinkedin } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
