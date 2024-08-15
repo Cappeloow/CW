@@ -4,7 +4,7 @@
     "projects":[
       {
         "name":"Jarekon.se",
-        "img": "src/assets/web_project_jarekon.png",
+        "img": "public/images/web_project_jarekon.png",
         "description": "A fully functional website created for a client in the car repair industry, aimed at boosting their online presence. I handled the entire process, from designing and developing the site to capturing photos and crafting content.",
         "url":"www:https//jarekon.se",
         "techStack":[ 
@@ -14,7 +14,7 @@
       },
       {
         "name":"Busker",
-        "img": "src/assets/busker.png",
+        "img": "public/images/busker.png",
         "description":"Busker is a full-stack social media platform designed for artists. It allows artists to showcase their profile, share links, and manage their availability through a calendar system. The artists can also buy their own QR-Code based Items from the store. Which can benefit them when they're playing live somewhere on a bar, festival or simply on the street. This simplifiy the connection between the audience and artists and the audience can really get to know the artist in no time.",
         "url":"https://github.com/Cappeloow/Busker",
         "techStack":[ 
@@ -28,7 +28,7 @@
       },
       {
         "name":"Shutdown",
-        "img": "src/assets/web_shutdown.png",
+        "img": "public/images/web_shutdown.png",
         "description": "Fullstack E-commerce platform specializing in selling caps. This project emphasizes seamless Stripe integration for secure payment processing.",
         "url":"https://github.com/Cappeloow/E-commerce---Shutdown",
         "techStack":[ 
@@ -41,7 +41,7 @@
       },
       {
         "name":"Pizzeria",
-        "img": "src/assets/deli-pizzeria.png",
+        "img": "public/images/deli-pizzeria.png",
         "description":"This website was created to provide an excellent user experience for customers.",
         "techStack":[ 
           "react",
@@ -52,7 +52,7 @@
       },
       {
         "name":"My Diary",
-        "img": "src/assets/web_mydiary.png",
+        "img": "public/images/web_mydiary.png",
         "description":"A full-stack web application designed to mimic a simple social media platform where users can interact with friends.",
         "techStack":[ 
           "javascript",
@@ -69,7 +69,7 @@
     "projects":[
       {
         "name":"Yoga Studio",
-        "img": "src/assets/design_frihetsateljen.png",
+        "img": "public/images/design_frihetsateljen.png",
         "description":"A figma scetch that was designed for the purpose of creating a yoga website.",
         "techStack":[ 
           "figma"
@@ -77,7 +77,7 @@
       },
       {
         "name": "Portfolio Figma Sketch",
-        "img": "src/assets/cw_figma.png",
+        "img": "public/images/cw_figma.png",
         "description": "Design sketch for my personal portfolio website, created using Figma to plan the layout, user experience, and visual elements before development.",
         "techStack": [
           "figma"
@@ -90,7 +90,7 @@
     "projects":[
       {
         "name":"Consid Converge",
-        "img": "src/assets/consid_converge.png",
+        "img": "public/images/consid_converge.png",
         "description": "Developed a mobile application for Consid's sales team to streamline their daily activities. The app features a search algorithm that helps sales representatives find consultants who match job requests. Additionally, I implemented a Tinder-like swipe functionality for creating matches, enhancing the user experience and making the app intuitive and engaging.",
         "techStack":[ 
           "reactNative",

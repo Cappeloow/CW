@@ -1,6 +1,6 @@
 import { FaLinkedin, FaGithub, FaTwitter, FaLocationArrow, FaHome } from 'react-icons/fa';
 import { LayoutRouteProps } from 'react-router-dom';
-import cwIcon from '../assets/cw_icon.png';
+import cwIcon from '../../public/images/cw_icon.png';
 import { CiMail, CiUser } from 'react-icons/ci';
 const Layout = ({ children }:LayoutRouteProps) => {
  return (

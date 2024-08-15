@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { IoMusicalNotes, IoCodeSlash } from "react-icons/io5";
 import { MdAddAPhoto, MdDesignServices } from "react-icons/md";
 import { FaCirclePlay } from "react-icons/fa6";
-import casperbild from '../../../assets/profilbild-casper-svartvit.jpg';
+import casperbild from '../../../../public/images/profilbild-casper-svartvit.jpg';
 import { motion, } from 'framer-motion';
 import { leftIconContainerMovement, rightIconContainerMovement } from '../../../animations/element';
 import TextWriter from '../../../animations/components/TextWriter';
