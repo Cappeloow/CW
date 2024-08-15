@@ -1,6 +1,6 @@
 import { FaLinkedin, FaGithub, FaTwitter, FaLocationArrow, FaHome } from 'react-icons/fa';
 import { LayoutRouteProps } from 'react-router-dom';
-import cwIcon from '../../public/images/cw_icon.png';
+import cwIcon from '../../images/cw_icon.png';
 import { CiMail, CiUser } from 'react-icons/ci';
 const Layout = ({ children }:LayoutRouteProps) => {
  return (
@@ -24,7 +24,19 @@ const Layout = ({ children }:LayoutRouteProps) => {
  </>
  <footer>
    <div className='main-footer-container'>
-   <section className='social-media-section'>
+   <section className='quick-links-section'>
+    <li><a href="/about"><FaLocationArrow/> About</a></li>
+    <li><a href="/projects"><FaLocationArrow/> Projects</a></li>
+    <li><a href="/contact"><FaLocationArrow/> Contact</a></li>
+    </section>
+   <section className='general-info-section'>
+    <div>
+      <p><CiUser/> Casper Wernersson</p>
+      <p><FaHome/> Karlshamn</p>
+      <p><a href="mailto:casper.wernersson@medieinstitutet.se"><CiMail/> Casper.wernersson@medieinstitutet.se</a></p>
+    </div>
+   </section>
+    <section className='social-media-section'>
     <a href="https://www.linkedin.com/in/cw1996/" target="_blank" rel="noopener noreferrer">
      <FaLinkedin/>
     </a>
@@ -35,18 +47,6 @@ const Layout = ({ children }:LayoutRouteProps) => {
      <FaTwitter/>
     </a>
    </section>
-   <section className='general-info-section'>
-    <div>
-      <p><CiUser/> Casper Wernersson</p>
-      <p><FaHome/> Karlshamn</p>
-      <p><a href="mailto:casper.wernersson@medieinstitutet.se"><CiMail/> Casper.wernersson@medieinstitutet.se</a></p>
-    </div>
-   </section>
-   <section className='quick-links-section'>
-    <li><a href="/about"><FaLocationArrow/> About</a></li>
-    <li><a href="/projects"><FaLocationArrow/> Projects</a></li>
-    <li><a href="/contact"><FaLocationArrow/> Contact</a></li>
-    </section>
     </div>
     <div className='copyright-container'>
       <p>Copyright © 2024 Casper Wernersson</p>

@@ -1,7 +1,7 @@
-import letterfront from '../../../public/images/letter-front.png';
+import letterfront from '../../../images/letter-front.png';
 import { FaLinkedin } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
-import letterback from '../../../public/images/letter-back.png';
+import letterback from '../../../images/letter-back.png';
 import ProfileHeader from '../../components/ProfileHeader';
 const ContactPage = () => {
   return (

@@ -1,5 +1,5 @@
 import ProfileHeader from '../../components/ProfileHeader'
-import profilcasper from '../../../public/images/profilbild-casper-svartvit.jpg';
+import profilcasper from '../../../images/profilbild-casper-svartvit.jpg';
 
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -31,7 +31,7 @@ const AboutPage = () => {
         <section className='about-image-section'>
           <ProfileHeader/>
           <div className='about-image-container'>
-            <a className="download-cv-btn" href="public/images/Casper CV.pdf" title="" download>
+            <a className="download-cv-btn" href="/images/Casper_CV.pdf" title="" download>
               Download CV
             </a>
             <img src={profilcasper} alt="" />
