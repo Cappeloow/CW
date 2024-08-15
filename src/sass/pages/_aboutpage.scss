@@ -54,6 +54,7 @@ main.about {
           border-top-right-radius:12px;
           border-bottom-left-radius:12px;
           &:hover {
+            cursor:pointer;
             color:white;
             background-color: black;
             transition:0.5s;
