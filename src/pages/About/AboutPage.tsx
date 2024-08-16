@@ -62,7 +62,7 @@ const AboutPage = () => {
         </p>
         <br />
         <p>
-         On my free time I dedicate myself to projects that I am passionate about. I write, sing, and produce music, developing physical products, baking napolitan pizza. 
+          In my free time, I dedicate myself to projects that I am passionate about. I write, sing, and produce music, hike, go on biking trips, and bake Neapolitan pizza.
         </p>
         <br />
         <p>
