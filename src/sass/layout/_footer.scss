@@ -7,6 +7,8 @@ footer {
     padding-top:10px;
     width:100%;
     flex-direction: column;
+    align-items: center;
+    display:flex;
     cursor:pointer;
     .main-footer-container{
         width:100%;
@@ -15,6 +17,10 @@ footer {
         cursor:pointer;
         @include medium {
             flex-direction: row;
+            
+        }
+        @include large {
+            width:70%;
         }
     .social-media-section {
         flex-direction: row;
@@ -82,6 +88,7 @@ footer {
     display:flex;
     justify-content: center;
     align-items: center;
+    width:100%;
     p {
       font-size:9px;  
     }

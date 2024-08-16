@@ -76,10 +76,7 @@ const IntroductionSection = () => {
   }
 
   return (
-    <section className='introduction-section' 
-    onMouseEnter={() => setShowProjectBtn(true)} 
-    onMouseLeave={() => setShowProjectBtn(false)}
-    >
+    <section className='introduction-section'>
           <aside className='left-icon-aside'>
           <motion.div 
                 variants={leftIconContainerMovement} 
@@ -112,7 +109,7 @@ const IntroductionSection = () => {
                   <br />
                   <TextWriter content={selectedExpertise.description} />
                   <br />
-                  {showProjectBtn && <button onClick={() => goToProjects()}><FaCirclePlay/></button>}
+                  <button onClick={() => goToProjects()}><FaCirclePlay/></button>
                 </div>
               </div>
             </article>
