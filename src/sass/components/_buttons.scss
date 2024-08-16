@@ -16,3 +16,20 @@
    position: relative; /* For the ::after pseudo-element */
 }
 
+.readmore-btn{
+   background-color: $background-color-light;
+   color: $background-color-dark;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   padding: 10px 15px;
+   border-radius: 20px;
+   border: none;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.5);
+   transition: 0.5s;
+   position: relative; 
+   &:hover {
+      background-color: $background-color-dark;
+      color: $background-color-light;
+   }
+}
+

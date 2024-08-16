@@ -24,7 +24,8 @@ export const projectList = [
       {
         "name":"Busker",
         "img": busker,
-        "description":"Busker is a full-stack social media platform designed for artists. It allows artists to showcase their profile, share links, and manage their availability through a calendar system. The artists can also buy their own QR-Code based Items from the store. Which can benefit them when they're playing live somewhere on a bar, festival or simply on the street. This simplifiy the connection between the audience and artists and the audience can really get to know the artist in no time.",
+        "description":"Busker is a full-stack social media platform tailored for artists. It’s designed to make performing in public spaces—whether on the street, in a pub, or at a festival—more convenient, regardless of an artist's level of recognition.",
+        "features":"Busker allows artists to create and showcase their profiles, share links, and manage their schedules using an integrated calendar system. Additionally, artists can purchase QR code-based items from the platform’s store, which they can use during live performances to connect easily with their audience. This feature streamlines the interaction between artists and their fans, enabling the audience to learn more about the artists quickly and effortlessly.",
         "url":"https://github.com/Cappeloow/Busker",
         "techStack":[ 
           "next.js",
@@ -49,9 +50,10 @@ export const projectList = [
         ]
       },
       {
-        "name":"Pizzeria",
+        "name":"Pizza Website",
         "img": pizzeria,
-        "description":"This website was created to provide an excellent user experience for customers.",
+        "description":"This website reflects my passion for pizza, and it's fully prepared to take orders if I decide to turn this passion into a business.",
+        "features": "The website features dynamic menus and an order list to keep track of what customers want to order over the phone. Users can easily add as many products as they like to their cart. This idea came to me when I was placing a large order and had to shout to my friends to find out what they wanted. Now, the process is simplified—no more missed items or yelling across the room. Everything is neatly organized and ready to go!",
         "techStack":[ 
           "react",
           "css",
@@ -100,7 +102,8 @@ export const projectList = [
       {
         "name":"Consid Converge",
         "img": consid,
-        "description": "Developed a mobile application for Consid's sales team to streamline their daily activities. The app features a search algorithm that helps sales representatives find consultants who match job requests. Additionally, I implemented a Tinder-like swipe functionality for creating matches, enhancing the user experience and making the app intuitive and engaging.",
+        "description": "Developed a mobile application for Consid's sales team to streamline their daily activities. The app enhances the user experience with intuitive and engaging features.",
+        "features":"The application includes a search algorithm that helps sales representatives find consultants who match job requests. Additionally, it features a Tinder-like swipe functionality for creating matches, making the process more interactive and user-friendly. As an admin, you are able to create consultant profiles both on the web and within the mobile application.",
         "techStack":[ 
           "reactNative",
           "react",

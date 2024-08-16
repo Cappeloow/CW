@@ -111,6 +111,13 @@ const ProjectPage = () => {
             </div>
             <br />
             <p>{project.description}</p>
+            <br />
+            {project.features && <>
+              {!isMinimizedImage && <button  className="readmore-btn" onClick={() => setIsMinimizedImage(true)}>Features</button>}
+              {isMinimizedImage && <h4>Features</h4>}
+              <br />
+              <p>{isMinimizedImage && project.features}</p>
+            </>}
             </article>
           </div>
         </div>

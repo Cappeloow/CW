@@ -6,6 +6,7 @@ export interface ICategory {
 export interface IProject {
     name: string;
     description: string;
+    features?:string;
     img: string;
     url?: string;
     techStack?: string[];
