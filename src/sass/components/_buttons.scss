@@ -27,9 +27,11 @@
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.5);
    transition: 0.5s;
    position: relative; 
+   animation: pulse 3s infinite;
    &:hover {
-      background-color: $background-color-dark;
-      color: $background-color-light;
+      background-color: white;
+      cursor:pointer;
+      color: $background-color-dark;
    }
 }
 
