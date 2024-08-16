@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub, FaTwitter, FaLocationArrow, FaHome } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaLocationArrow, FaHome } from 'react-icons/fa';
 import { LayoutRouteProps } from 'react-router-dom';
 import cwIcon from '../../images/cw_icon.png';
 import { CiMail, CiUser } from 'react-icons/ci';
