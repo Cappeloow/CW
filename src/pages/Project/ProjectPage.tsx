@@ -23,6 +23,20 @@ const ProjectPage = () => {
   },[]);
   
 
+  const handleImageClick = () => {
+    if (isMinimizedImage) {
+      setIsMinimizedImage(false);
+    } else {
+      if (category.projects.length > 1) {
+      const currentIndex = category.projects.findIndex(proj => proj === project);
+        console.log("truetype");
+      const nextIndex = (currentIndex + 1) % category.projects.length;
+      setProject(category.projects[nextIndex]);
+      }
+    }
+  };
+
+
   return (
     <main className='projects'>
       <section className='left-project-section'>
@@ -83,7 +97,7 @@ const ProjectPage = () => {
         <div className='project-main-container'>
           <div className={!isMinimizedImage ? 'project-img-container' :"minimized-project-img-container"}>
             <img src={project.img} alt="" 
-            onClick={() => setIsMinimizedImage(false)}
+            onClick={handleImageClick}
             />
             {showBtn && !isMinimizedImage && <button
             onClick={() => setIsMinimizedImage(true)}
