@@ -33,7 +33,7 @@ const Layout = ({ children }:LayoutRouteProps) => {
     <div>
       <p><CiUser/> Casper Wernersson</p>
       <p><FaHome/> Karlshamn</p>
-      <p><a href="mailto:casper.wernersson@medieinstitutet.se"><CiMail/> Casper.wernersson@medieinstitutet.se</a></p>
+      <p><a href="mailto:cappew1996@gmail.com"><CiMail/> Cappew1996@gmail.com</a></p>
     </div>
    </section>
     <section className='social-media-section'>
@@ -43,8 +43,8 @@ const Layout = ({ children }:LayoutRouteProps) => {
     <a href="https://github.com/Cappeloow" target="_blank" rel="noopener noreferrer">
      <FaGithub/>
     </a>
-    <a href="https://twitter.com/Cappeloow" target="_blank" rel="noopener noreferrer">
-     <FaTwitter/>
+    <a href="mailto:cappew1996@gmail.com" target="_blank" rel="noopener noreferrer">
+     <CiMail/>
     </a>
    </section>
     </div>
