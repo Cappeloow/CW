@@ -39,9 +39,6 @@ const expertiseList:IExpertise[] = [
 const IntroductionSection = () => {
   const [selectedExpertise, setSelectedExpertise] = useState<IExpertise>(expertiseList[0]);
   const [isProjectActivated, setIsProjectActivated] = useState(false);
-
-  const [showProjectBtn, setShowProjectBtn] = useState(false);;
-
   const handleExpertiseClick = (expertise:string) => {
     
     switch (expertise) {
