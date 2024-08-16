@@ -103,7 +103,7 @@ const IntroductionSection = () => {
               <div className='text-section'>
                 <div className='text-container'>
                   <h2>{selectedExpertise.title}</h2>
-                  <br />
+                  
                   <TextWriter content={selectedExpertise.description} />
                   <br />
                   <button onClick={() => goToProjects()}><FaCirclePlay/></button>
